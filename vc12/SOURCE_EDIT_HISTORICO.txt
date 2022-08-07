@@ -1,0 +1,3 @@
+11/10/2014 :: int Game::getOs() { return 0xBB; }
+# um porrilhao de coisas, parei de anotar :( #
+20/07/2015 :: Soul agora não recebe apenas um byte no cliente, e sim 2 bytes = u16 = word

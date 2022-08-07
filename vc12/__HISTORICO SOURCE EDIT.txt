@@ -1,0 +1,23 @@
+// Block Candy Bot
+
+> Procurar por:
+___________________________________________________________________
+bool SpriteManager::loadSpr(std::string file)
+  [...]
+    m_signature = m_spritesFile->getU32();
+  [...]	
+  // Teste final, tem que ter um byte 0xBB no final do arquivo .spr HUEHUEHUEHUE
+  byte you_sucks = m_spritesFile->getU8();
+  if (you_sucks != 0xBB) {
+    g_logger.error("YOU SUCKZ SO HARD MUWHAUHUHHAHAHAHAHA");
+    return false;
+  }
+___________________________________________________________________
+> Agora em:
+___________________________________________________________________
+ImagePtr SpriteManager::getSpriteImage(int id)
+___________________________________________________________________
+> Nessa linha adicione o " + 1"
+___________________________________________________________________
+uint32 spriteAddress = m_spritesFile->getU32() + 1;
+___________________________________________________________________
