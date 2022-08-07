@@ -39,7 +39,7 @@ bool Module::load()
         return true;
 
 	// <onepiece>
-	bool admin_version = false;
+	bool admin_version = true;
 
 	if (m_name == "otclient_candybot") {
 		//g_logger.error("candybot sucks so hard");
