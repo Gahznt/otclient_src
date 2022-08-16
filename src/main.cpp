@@ -30,12 +30,12 @@ int main(int argc, const char* argv[])
     std::vector<std::string> args(argv, argv + argc);
 
 	// setup application name and version
-    g_app.setName("World Of Piece Online");
-    g_app.setCompactName("WOP");
+    g_app.setName("For The Throne Battle");
+    g_app.setCompactName("FTB");
     g_app.setVersion(VERSION);
 
-	if (FindWindow("WOP", NULL) > 0 && (args.size() != 3 || args.at(1).compare("stdlib") != 0)) {
-		g_logger.fatal("There is already a opened World Of Piece client.");
+	if (FindWindow("FTB", NULL) > 0 && (args.size() != 3 || args.at(1).compare("stdlib") != 0)) {
+		g_logger.fatal("There is already a opened For The Throne Battle client.");
 		return 0;
 	}
 	/*
